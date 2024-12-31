@@ -7,13 +7,13 @@ const Card: FC<IImage> = (props) => {
   const { name, url, likes, shares } = props || {};
 
   return (
-    <figure className="w-fit relative group overflow-hidden rounded">
+    <figure className="w-full relative group overflow-hidden rounded-md">
       <Image
         alt={name}
         src={url}
         width={400}
         height={400}
-        className="w-full max-w-md group-hover:scale-105 transition-all duration-200"
+        className="w-full object-cover h-[400px] max-w-md group-hover:scale-105 transition-all duration-200"
       />
 
       <figcaption className="w-full absolute -bottom-20 left-0 p-3 bg-slate-900/30 text-white flex justify-between items-center gap-1.5 invisible group-hover:bottom-0 group-hover:visible transition-all duration-200">

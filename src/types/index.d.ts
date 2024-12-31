@@ -1,8 +1,9 @@
+export type TCategory = "photo" | "vector";
 export interface IImage {
   id: string;
   name: string;
   url: string;
-  category: "photo" | "vector";
+  category: TCategory;
   likes: number;
   shares: number;
 }
