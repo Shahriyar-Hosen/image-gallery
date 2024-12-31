@@ -3,7 +3,7 @@ import { IImage } from "@/types";
 export const data: IImage[] = [
   {
     id: "0",
-    name: "Abstract painting",
+    name: "Sunset Landscape",
     url: "https://imgur.com/E3daKOn.jpg",
     category: "photo",
     likes: 250,
@@ -11,7 +11,7 @@ export const data: IImage[] = [
   },
   {
     id: "1",
-    name: "Abstract painting",
+    name: "Modern Art Wave",
     url: "https://imgur.com/9Rp4jxp.jpg",
     category: "vector",
     likes: 250,
@@ -19,7 +19,7 @@ export const data: IImage[] = [
   },
   {
     id: "2",
-    name: "Abstract painting",
+    name: "Colorful Horizon",
     url: "https://imgur.com/Og2dLCM.jpg",
     category: "photo",
     likes: 250,
@@ -27,7 +27,7 @@ export const data: IImage[] = [
   },
   {
     id: "3",
-    name: "Abstract painting",
+    name: "Geometric Patterns",
     url: "https://imgur.com/DMC9OT7.jpg",
     category: "vector",
     likes: 250,
@@ -35,7 +35,7 @@ export const data: IImage[] = [
   },
   {
     id: "4",
-    name: "Abstract painting",
+    name: "Abstract Forest",
     url: "https://imgur.com/hVHjNzE.jpg",
     category: "photo",
     likes: 250,
@@ -43,7 +43,7 @@ export const data: IImage[] = [
   },
   {
     id: "5",
-    name: "Abstract painting",
+    name: "Minimalist Shapes",
     url: "https://imgur.com/xOUKNqC.jpg",
     category: "vector",
     likes: 250,
