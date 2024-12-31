@@ -1,10 +1,17 @@
 import { IImage } from "@/types";
 import Image from "next/image";
-import { FC } from "react";
-import { SaveIcon } from "../icons";
+import { FC, useState } from "react";
+import { SavedIcon, SaveIcon } from "../icons";
 
 const Card: FC<IImage> = (props) => {
   const { name, url, likes, shares } = props || {};
+  const [totalLike, setTotalLike] = useState(likes);
+  const [save, setSave] = useState(false);
+
+  const updateLikes = (isSave: boolean) => {
+    setSave(isSave);
+    setTotalLike((prv) => (isSave ? prv + 1 : prv - 1));
+  };
 
   return (
     <figure className="w-full relative group overflow-hidden rounded-md">
@@ -20,11 +27,11 @@ const Card: FC<IImage> = (props) => {
         <div className="space-y-2">
           <p className="text-lg font-semibold">{name}</p>
           <p className="text-sm">
-            {likes} likes | {shares} shares
+            {totalLike} likes | {shares} shares
           </p>
         </div>
-        <button>
-          <SaveIcon />
+        <button onClick={() => updateLikes(!save)}>
+          {save ? <SavedIcon /> : <SaveIcon />}
         </button>
       </figcaption>
     </figure>
